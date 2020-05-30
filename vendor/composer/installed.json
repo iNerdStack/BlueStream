@@ -488,7 +488,8 @@
                 "email": "jakub.onderka@gmail.com",
                 "homepage": "http://www.acci.cz"
             }
-        ]
+        ],
+        "abandoned": "php-parallel-lint/php-console-color"
     },
     {
         "name": "jakub-onderka/php-console-highlighter",
@@ -534,7 +535,8 @@
                 "email": "acci@acci.cz",
                 "homepage": "http://www.acci.cz/"
             }
-        ]
+        ],
+        "abandoned": "php-parallel-lint/php-console-highlighter"
     },
     {
         "name": "laravel/framework",
@@ -1009,7 +1011,8 @@
         "keywords": [
             "cron",
             "schedule"
-        ]
+        ],
+        "abandoned": "dragonmantank/cron-expression"
     },
     {
         "name": "myclabs/deep-copy",
@@ -1838,7 +1841,8 @@
         "keywords": [
             "mock",
             "xunit"
-        ]
+        ],
+        "abandoned": true
     },
     {
         "name": "psr/http-message",
@@ -2992,17 +2996,17 @@
     },
     {
         "name": "symfony/http-foundation",
-        "version": "v3.4.14",
-        "version_normalized": "3.4.14.0",
+        "version": "v3.4.40",
+        "version_normalized": "3.4.40.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/http-foundation.git",
-            "reference": "19a3267828046a2a4a05e3dc2954bbd2e0ad9fa6"
+            "reference": "eded33daef1147be7ff1249706be9a49fe2c7a44"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/http-foundation/zipball/19a3267828046a2a4a05e3dc2954bbd2e0ad9fa6",
-            "reference": "19a3267828046a2a4a05e3dc2954bbd2e0ad9fa6",
+            "url": "https://api.github.com/repos/symfony/http-foundation/zipball/eded33daef1147be7ff1249706be9a49fe2c7a44",
+            "reference": "eded33daef1147be7ff1249706be9a49fe2c7a44",
             "shasum": ""
         },
         "require": {
@@ -3013,7 +3017,7 @@
         "require-dev": {
             "symfony/expression-language": "~2.8|~3.0|~4.0"
         },
-        "time": "2018-08-01T14:04:26+00:00",
+        "time": "2020-04-18T20:23:17+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
