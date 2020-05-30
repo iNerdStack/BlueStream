@@ -17,6 +17,7 @@ As of PHP 5.5, some OS distributions may require you to manually install the PHP
 # Contents
 
 All blog features have been implemented including
+
 **Page Features:**
 
 1. Blog Posts / Articles
