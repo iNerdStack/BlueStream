@@ -1,51 +1,87 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# BlueStream
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+BlueStream is an open source blog platform developed with **Laravel PHP** framework. A simple and light blog platform with Android App provided. Click [here](https://github.com/iNerdStack/BlueStream-App) to go to project.
 
-## About Laravel
+## Requirements
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+All requirement needed are same required by Laravel. The Laravel framework has a few system requirements:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- PHP >= 5.4, PHP < 7
+- Mcrypt PHP Extension
+- OpenSSL PHP Extension
+- Mbstring PHP Extension
+- Tokenizer PHP Extension
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
+As of PHP 5.5, some OS distributions may require you to manually install the PHP JSON extension. When using Ubuntu, this can be done via `apt-get install php5-json`.
 
-## Learning Laravel
+# Contents
 
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
+All blog features have been implemented including
+**Page Features:**
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+1. Blog Posts / Articles
+2. Post Comments
+3. Post Category
+4. Post Search
 
-## Laravel Sponsors
+**Admin Dashboard**
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](http://patreon.com/taylorotwell):
+6. Recent Posts
+7. Draft Posts
+8. Comment Management (Approval and Spam Control)
+9. Content Search
+10. Category Management
 
-- **[Vehikl](http://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Styde](https://styde.net)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
+# Project Setup
 
-## Contributing
+1. Upload entire project folder to your server `root directory` - _not ( public_html)._
+2. Move all files and folders in `public` folder to your cpanel’s `public_html`folder.
+3. Create a database and import `bluestream.sql` from `SQL` folder in the root directory to your database.
+4. Edit `APP_NAME` , `APP_URL` , `DB_DATABASE`, `DB_USERNAME`, `DB_PASSWORD`, database name in `.env` in the root folder.
+5. Also change database information in `config/database.php`
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+```php
+'mysql' => [
 
-## Security Vulnerabilities
+'driver' => 'mysql',
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+'host' => env('DB_HOST', '127.0.0.1'),
 
-## License
+'port' => env('DB_PORT', '3306'),
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+'database' => env('DB_DATABASE', 'bluestream'),
+
+'username' => env('DB_USERNAME', 'root'),
+
+'password' => env('DB_PASSWORD', ''),
+
+'unix_socket' => env('DB_SOCKET', ''),
+
+'charset' => 'utf8mb4',
+
+'collation' => 'utf8mb4_unicode_ci',
+
+'prefix' => '',
+
+'strict' => true,
+
+'engine' => null,
+
+],
+```
+
+6. If all is set. Load the site and visit `yoursite.com/dashboard` to access Dashboard.
+7. Default Email is `admin@bluestream.com` and password `!BlueStream!`
+8. Click on register user to register a new admin. After registering the new user, DELETE the default user with email `admin@bluestream.com` from `users` table in your database.
+9. All is set and can start posting articles and managing your new blog.
+10. You can set up the blog [App](https://github.com/iNerdStack/BlueStream-App) if you are done with all the steps.
+
+# Project Dependencies
+
+**Frontend UI / Dashboard**: [AdminLTE 3](https://github.com/riverocdavidb/admin-lte)
+**Backend:** [Laravel PHP 5.4](https://github.com/laravel/)
+**Text Editor:** [CK Editor](https://github.com/ckeditor/ckeditor4)
+
+## 📄 License
+
+BlueStream is MIT licensed, as found in the [LICENSE](https://tapgames.xyz/LICENSE) file.
