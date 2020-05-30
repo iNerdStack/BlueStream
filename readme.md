@@ -30,7 +30,7 @@ All blog features have been implemented including
 7. Draft Posts
 8. Comment Management (Approval and Spam Control)
 9. Content Search
-10. Category Management
+10. Category Page
 
 # Project Setup
 
@@ -79,8 +79,11 @@ All blog features have been implemented including
 # Project Dependencies
 
 **Frontend UI / Dashboard**: [AdminLTE 3](https://github.com/riverocdavidb/admin-lte)
+
 **Backend:** [Laravel PHP 5.4](https://github.com/laravel/)
+
 **Text Editor:** [CK Editor](https://github.com/ckeditor/ckeditor4)
+
 
 ## 📄 License
 
