@@ -1,12 +1,13 @@
+
 # BlueStream
 
 BlueStream is an open source blog platform developed with **Laravel PHP** framework. A simple and light blog platform with Android App provided. Click [here](https://github.com/iNerdStack/BlueStream-App) to go to project.
-
+![bluestream Framework](https://i.imgur.com/mCguHcR.jpg)
 ## Requirements
 
 All requirement needed are same required by Laravel. The Laravel framework has a few system requirements:
 
-- PHP >= 5.4, PHP < 7
+- PHP >= 5.4, (PHP  7 recommended)
 - Mcrypt PHP Extension
 - OpenSSL PHP Extension
 - Mbstring PHP Extension
@@ -33,6 +34,8 @@ All blog features have been implemented including
 9. Content Search
 10. Category Page
 
+**Preview**
+![Bluestream Desktop](https://i.imgur.com/nCZ5Wyl.png)![enter image description here](https://i.imgur.com/FY7pR4N.png)
 # Project Setup
 
 1. Upload entire project folder to your server `root directory` - _not ( public_html)._
