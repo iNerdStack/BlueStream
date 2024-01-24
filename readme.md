@@ -35,7 +35,7 @@ All blog features have been implemented including
 10. Category Page
 
 **Preview**
-![Bluestream Desktop](https://i.imgur.com/nCZ5Wyl.png)![enter image description here](https://i.imgur.com/FY7pR4N.png)
+![Bluestream Desktop](https://i.imgur.com/nCZ5Wyl.png)
 # Project Setup
 
 1. Upload entire project folder to your server `root directory` - _not ( public_html)._
